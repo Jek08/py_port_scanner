@@ -1,2 +1,2 @@
 # Python Port Scanner
-Scan website hostname quickly.
+Quick and simple port scanner written in python.
