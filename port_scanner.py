@@ -1,5 +1,6 @@
 import socket as s
 import threading
+import logging
 
 
 def check_port_connection(ip, port_number, ports):
