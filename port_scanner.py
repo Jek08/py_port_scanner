@@ -38,6 +38,9 @@ def scan_port(ip):
 if __name__ == "__main__":
     target = input("Enter target hostname: ")
     target_ip = s.gethostbyname(target)
-    print("Targeting on: %s" % target_ip)
+    
+    new_format = "%(message)s"
+    logging.basicConfig(format=new_format, level=logging.INFO)
+    logging.info("Targeting on: %s" % target_ip)
 
     scan_port(target_ip)  # initiate the scan
